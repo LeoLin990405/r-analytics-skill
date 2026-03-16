@@ -1,0 +1,48 @@
+name: Bug Report
+description: Report an inaccuracy or error in a skill file
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue! Please fill in the details below.
+  - type: input
+    id: skill-file
+    attributes:
+      label: Skill File
+      description: Which SKILL.md file contains the issue?
+      placeholder: "e.g., sub-skills/r-data/r-data-manipulation/dplyr/SKILL.md"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong or inaccurate?
+      placeholder: Describe the issue...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should the correct content be?
+      placeholder: The correct code/information should be...
+    validations:
+      required: true
+  - type: input
+    id: r-version
+    attributes:
+      label: R Version
+      description: Which version of R are you using?
+      placeholder: "e.g., 4.4.0"
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might help.
+    validations:
+      required: false

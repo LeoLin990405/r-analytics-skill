@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: CRAN Package Index
+    url: https://cran.r-project.org/web/packages/
+    about: Browse all available R packages on CRAN
+  - name: Bioconductor Packages
+    url: https://bioconductor.org/packages/release/BiocViews.html
+    about: Browse Bioconductor packages for bioinformatics

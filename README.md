@@ -1,60 +1,51 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude%20Code-Skill-blue?style=for-the-badge" alt="Claude Code Skill">
-  <img src="https://img.shields.io/badge/Packages-250+-green?style=for-the-badge" alt="Packages">
-  <img src="https://img.shields.io/badge/R-Analytics-276DC3?style=for-the-badge" alt="R Analytics">
-</p>
-
 <h1 align="center">R Analytics Skill</h1>
 
 <p align="center">
   <strong>Comprehensive R Language Analytics Skill for Claude Code</strong>
   <br>
-  <em>250+ packages across 15 domains including data manipulation, visualization, machine learning, and more</em>
+  <em>250+ packages across 15 domains &mdash; data manipulation, visualization, machine learning, and more</em>
 </p>
 
 <p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-domains">Domains</a> •
-  <a href="#-packages">Packages</a> •
-  <a href="#-structure">Structure</a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/LeoLin990405/r-analytics-skill?style=flat-square" alt="License"></a>
+  <a href="https://github.com/LeoLin990405/r-analytics-skill/stargazers"><img src="https://img.shields.io/github/stars/LeoLin990405/r-analytics-skill?style=flat-square" alt="Stars"></a>
+  <a href="https://github.com/LeoLin990405/r-analytics-skill/issues"><img src="https://img.shields.io/github/issues/LeoLin990405/r-analytics-skill?style=flat-square" alt="Issues"></a>
+  <img src="https://img.shields.io/badge/Claude%20Code-Skill-8A2BE2?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code Skill">
+  <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R Language">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Claude%20Code-CLI-8A2BE2?logo=anthropic&logoColor=white" alt="Claude Code">
-  <img src="https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white" alt="R">
-  <img src="https://img.shields.io/badge/tidyverse-1A162D?logo=tidyverse&logoColor=white" alt="tidyverse">
-  <img src="https://img.shields.io/badge/ggplot2-FC8D62?logo=ggplot2&logoColor=white" alt="ggplot2">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+  <a href="#-features">Features</a> &bull;
+  <a href="#-quick-start">Quick Start</a> &bull;
+  <a href="#-sub-skills-overview">Sub-Skills</a> &bull;
+  <a href="#-project-structure">Structure</a> &bull;
+  <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
-**English** | [中文](#中文)
-
----
-
-## Overview
-
-**R Analytics Skill** provides comprehensive R programming assistance, covering data manipulation, visualization, machine learning, web development, spatial analysis, and more.
-
-### Why R Analytics Skill?
-
-| Challenge | Solution |
-|-----------|----------|
-| Scattered R knowledge | **357 SKILL.md files** organized by domain |
-| Package selection | **250+ packages** with recommendations |
-| Learning curve | **Hierarchical structure** from basic to advanced |
-| Code examples | **Practical examples** for each package |
+**English** | [中文](README_CN.md)
 
 ---
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
-| **15 Domains** | Major R application areas |
-| **70+ Categories** | Specific sub-domains |
-| **250+ Packages** | Individual R packages |
-| **357 SKILL.md** | Total skill files |
+| Metric | Value | Details |
+|--------|------:|:--------|
+| **Domains** | 15 | Data, Viz, ML, Web, Spatial, Network, NLP, Stats, Bio, Dev, Parallel, Syntax, Language API, Logging, Learning |
+| **Categories** | 70+ | Specific sub-domains within each area |
+| **Packages** | 250+ | Individual R package skill files |
+| **SKILL.md files** | 357 | Total skill definitions across the tree |
+| **References** | 18 | Curated guides covering R4DS, Advanced R, Graphics Cookbook, Tidyverse, Bioconductor |
+
+### Highlights
+
+| Area | Key Packages |
+|------|--------------|
+| Data Manipulation | dplyr, data.table, tidyr, purrr, lubridate, arrow |
+| Visualization | ggplot2, plotly, leaflet, highcharter, echarts4r, gganimate |
+| Machine Learning | tidymodels, caret, mlr3, xgboost, lightgbm, keras, torch |
+| Web & Reports | Shiny, plumber, rmarkdown, quarto, httr2 |
+| Spatial Analysis | sf, terra, tmap, leaflet, stars |
+| Bioinformatics | DESeq2, GenomicRanges, Biostrings, edgeR |
 
 ---
 
@@ -67,155 +58,134 @@ cd ~/.claude/skills
 git clone https://github.com/LeoLin990405/r-analytics-skill.git r-analytics
 ```
 
-### Verify Installation
+### Verify
 
 ```bash
 ls ~/.claude/skills/r-analytics/SKILL.md
 ```
 
----
+### Usage
 
-## Domains
+Once installed, Claude Code automatically picks up the skill. Just ask naturally:
 
-| Domain | Description | Packages |
-|--------|-------------|----------|
-| `r-data` | Data manipulation, formats, databases | 35+ |
-| `r-viz` | Static, interactive, animated visualization | 35+ |
-| `r-ml` | Machine learning frameworks, algorithms | 45+ |
-| `r-web` | Shiny, APIs, scraping, reports | 25+ |
-| `r-spatial` | Vector, raster, mapping, analysis | 15+ |
-| `r-network` | Graph analysis, visualization | 10+ |
-| `r-nlp` | Text mining, sentiment, topic modeling | 12+ |
-| `r-stats` | Bayesian, finance, optimization | 17+ |
-| `r-bio` | Bioinformatics (RNA-seq, genomics) | 11+ |
-| `r-dev` | Package development, testing | 20+ |
-| `r-parallel` | Parallel & high-performance computing | 8+ |
-| `r-syntax` | Pipe operators & syntax extensions | 2 |
-| `r-language-api` | Python, JavaScript, Java, C++ interfaces | 5 |
-| `r-logging` | Application logging frameworks | 3 |
-| `r-learning` | Interactive learning tools | 2 |
-
----
-
-## Packages
-
-### Data Processing (35+)
-
-```
-Manipulation:  dplyr, data.table, tidyr, purrr, lubridate, stringr
-Formats:       readr, arrow, readxl, jsonlite, haven, vroom
-Database:      DBI, dbplyr, RSQLite, RPostgres, odbc
-Validation:    validate, assertr, pointblank
-```
-
-### Visualization (35+)
-
-```
-Static:        ggplot2, patchwork, scales, ggthemes, cowplot, gt
-Interactive:   plotly, leaflet, DT, highcharter, echarts4r
-Animation:     gganimate, animation
-```
-
-### Machine Learning (45+)
-
-```
-Frameworks:    tidymodels, caret, mlr3, h2o
-Boosting:      xgboost, lightgbm, gbm, catboost
-Deep Learning: keras, torch, tensorflow
-Time Series:   prophet, forecast, fable
-```
-
----
-
-## Structure
-
-```
-r-analytics/
-├── SKILL.md                 # Main skill file
-├── README.md                # Documentation
-├── references/              # Reference docs (17 files)
-└── sub-skills/              # Domain-specific skills (15 domains)
-    ├── r-data/              # Data manipulation
-    ├── r-viz/               # Visualization
-    ├── r-ml/                # Machine learning
-    ├── r-web/               # Web & reports
-    ├── r-spatial/           # Spatial analysis
-    └── ...
-```
-
----
-
-## Usage
-
-```bash
-# Ask about R programming
-"How do I use dplyr to filter data?"
-
-# Request data analysis
-"Analyze this CSV file with R"
-
-# Create visualizations
-"Create a ggplot2 scatter plot"
-
-# Work with specific packages
+```text
+"How do I use dplyr to filter and summarize data?"
+"Create a ggplot2 scatter plot with regression line"
 "Show me how to use tidymodels for classification"
+"Analyze this CSV file with R"
+```
+
+### Requirements
+
+- **R** 4.0+
+- **Claude Code** CLI
+
+---
+
+## Sub-Skills Overview
+
+| Sub-Skill | Directory | Description |
+|-----------|-----------|-------------|
+| **R Data** | `sub-skills/r-data/` | Data manipulation, formats, databases (dplyr, data.table, DBI, arrow) |
+| **R Viz** | `sub-skills/r-viz/` | Visualization (ggplot2, plotly, leaflet, HTML widgets) |
+| **R ML** | `sub-skills/r-ml/` | Machine learning (tidymodels, xgboost, caret, deep learning) |
+| **R Web** | `sub-skills/r-web/` | Web technologies & reproducible research (Shiny, rmarkdown) |
+| **R Stats** | `sub-skills/r-stats/` | Bayesian analysis, optimization, finance (Stan, quantmod) |
+| **R NLP** | `sub-skills/r-nlp/` | Natural language processing (tidytext, quanteda, tm) |
+| **R Bio** | `sub-skills/r-bio/` | Bioinformatics (Bioconductor, DESeq2, GenomicRanges) |
+| **R Network** | `sub-skills/r-network/` | Network analysis (igraph, tidygraph, visNetwork) |
+| **R Spatial** | `sub-skills/r-spatial/` | Spatial analysis (sf, terra, leaflet, tmap) |
+| **R Dev** | `sub-skills/r-dev/` | R development (devtools, testthat, roxygen2, Rcpp) |
+| **R Parallel** | `sub-skills/r-parallel/` | Parallel computing & performance (future, Rcpp, Spark) |
+| **R Syntax** | `sub-skills/r-syntax/` | Pipe operators & syntax extensions |
+| **R Language API** | `sub-skills/r-language-api/` | Python, JavaScript, Java, C++ interfaces |
+| **R Logging** | `sub-skills/r-logging/` | Application logging frameworks |
+| **R Learning** | `sub-skills/r-learning/` | Interactive learning tools |
+| **R Resources** | `sub-skills/r-resources/` | Learning resources (books, courses, cheat sheets) |
+
+---
+
+## Project Structure
+
+```
+r-analytics-skill/
+├── SKILL.md                  # Main skill entry point
+├── README.md                 # This file
+├── README_CN.md              # Chinese documentation
+├── LICENSE                   # MIT License
+├── CONTRIBUTING.md           # Contribution guidelines
+├── CHANGELOG.md              # Release history
+├── .github/
+│   ├── workflows/
+│   │   └── claude-review.yml # CI workflow
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.yml    # Bug report template
+│   │   ├── feature_request.yml # Feature request template
+│   │   └── config.yml        # Issue template config
+│   └── PULL_REQUEST_TEMPLATE.md
+├── references/               # 18 curated reference guides
+│   ├── r4ds-*.md             # R for Data Science (2e)
+│   ├── advr-*.md             # Advanced R (2e)
+│   ├── graphics-cookbook.md   # R Graphics Cookbook
+│   ├── tidyverse-ecosystem.md
+│   ├── bioconductor.md
+│   ├── awesome-packages.md
+│   └── ...
+├── scripts/
+│   ├── update_packages.R     # Package updater
+│   └── example.py
+├── assets/
+└── sub-skills/               # 15 domain-specific skill trees
+    ├── r-data/               # Data manipulation
+    ├── r-viz/                # Visualization
+    ├── r-ml/                 # Machine learning
+    ├── r-web/                # Web & reports
+    ├── r-spatial/            # Spatial analysis
+    ├── r-network/            # Network analysis
+    ├── r-nlp/                # NLP & text mining
+    ├── r-stats/              # Statistics & finance
+    ├── r-bio/                # Bioinformatics
+    ├── r-dev/                # R development
+    ├── r-parallel/           # Parallel computing
+    ├── r-syntax/             # Syntax extensions
+    ├── r-language-api/       # Language interfaces
+    ├── r-logging/            # Logging frameworks
+    ├── r-learning/           # Learning tools
+    └── r-resources/          # Learning resources
 ```
 
 ---
 
-## 中文
+## References
 
-### 概述
+The `references/` directory contains curated guides:
 
-**R Analytics Skill** 提供全面的 R 编程辅助，涵盖数据处理、可视化、机器学习、Web 开发、空间分析等。
+| Guide | Topics |
+|-------|--------|
+| **R for Data Science (2e)** | ggplot2, dplyr, tidyr, readr, purrr, functions |
+| **Advanced R (2e)** | Foundations, FP, OOP, metaprogramming, performance |
+| **R Graphics Cookbook** | Bar, line, scatter, distributions, annotations, colors |
+| **Tidyverse Ecosystem** | Core packages, import tools, modeling patterns |
+| **Bioconductor** | Installation, GenomicRanges, RNA-seq, annotation |
+| **Awesome Packages** | Curated list by domain (ML, viz, web, finance, etc.) |
 
-### 领域覆盖
+---
 
-| 领域 | 描述 | 包数量 |
-|------|------|--------|
-| `r-data` | 数据处理、格式、数据库 | 35+ |
-| `r-viz` | 静态、交互、动画可视化 | 35+ |
-| `r-ml` | 机器学习框架、算法 | 45+ |
-| `r-web` | Shiny、API、爬虫、报告 | 25+ |
-| `r-spatial` | 矢量、栅格、制图、分析 | 15+ |
-| `r-network` | 图分析、可视化 | 10+ |
-| `r-nlp` | 文本挖掘、情感分析 | 12+ |
-| `r-stats` | 贝叶斯、金融、优化 | 17+ |
-| `r-bio` | 生物信息学 | 11+ |
-| `r-dev` | 包开发、测试 | 20+ |
-| `r-parallel` | 并行计算 | 8+ |
+## Contributing
 
-### 安装
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
-```bash
-cd ~/.claude/skills
-git clone https://github.com/LeoLin990405/r-analytics-skill.git r-analytics
-```
-
-### 使用方法
-
-```bash
-# 询问 R 编程
-"用 dplyr 怎么筛选数据？"
-
-# 请求数据分析
-"用 R 分析这个 CSV 文件"
-
-# 创建可视化
-"用 ggplot2 画散点图"
-```
-
-### 依赖
-
-- R 4.0+
-- Claude Code CLI
+- Adding new package skills
+- Improving existing skill files
+- Adding references and examples
+- Reporting bugs and requesting features
 
 ---
 
 ## Contributors
 
 - **Leo** ([@LeoLin990405](https://github.com/LeoLin990405)) - Project Lead & Curation
-- **Claude** (Anthropic Claude Opus 4.5) - Content Generation & Organization
+- **Claude** (Anthropic Claude) - Content Generation & Organization
 
 ## Acknowledgements
 
@@ -226,10 +196,4 @@ git clone https://github.com/LeoLin990405/r-analytics-skill.git r-analytics
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-<p align="center">
-  <sub>Built with ❤️ by Leo and Claude</sub>
-</p>
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
